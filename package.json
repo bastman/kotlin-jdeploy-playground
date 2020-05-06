@@ -1,0 +1,25 @@
+{
+  "bin": {
+    "kotlin-jdeploy-playground": "jdeploy-bundle/jdeploy.js"
+  },
+  "author": "",
+  "description": "",
+  "main": "index.js",
+  "preferGlobal": true,
+  "repository": "",
+  "version": "1.0.0",
+  "jdeploy": {
+    "jar": "build/libs/kotlin-jdeploy-playground-all.jar"
+  },
+  "dependencies": {
+    "shelljs": "^0.7.5"
+  },
+  "license": "ISC",
+  "name": "kotlin-jdeploy-playground",
+  "files": [
+    "jdeploy-bundle"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
