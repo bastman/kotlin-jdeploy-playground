@@ -3,13 +3,19 @@
  */
 package com.example
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello world. 1"
-        }
+import com.github.ajalt.clikt.core.CliktCommand
+import com.github.ajalt.clikt.parameters.options.option
+import com.github.ajalt.clikt.parameters.options.required
+
+class App:CliktCommand() {
+    private val from by option("-f", "--from", help = "from").required()
+    private val to by option("-t", "--to", help = "to").required()
+
+    override fun run() {
+        println("hello from $from to $to")
+    }
 }
 
 fun main(args: Array<String>) {
-    println(App().greeting)
+    App().main(args)
 }
