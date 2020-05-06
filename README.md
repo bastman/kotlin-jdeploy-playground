@@ -12,13 +12,13 @@ the distribution does not(!) bundle java - as jpackage does
 
 
 
-# install jdeploy
+# (initial) install jdeploy
 ```
 # install jdeploy (globally)
 $ npm install -g jdeploy
 ```
 
-# build app
+# (initial) build app
 ```
 # create fat jar
 $ ./gradlew shadowJar
@@ -29,6 +29,16 @@ $ jdeploy init
 # install app on local machine 
 # just creates symlinks
 $ jdeploy install
+
+# run local app
+$ kotlin-jdeploy-playground
+
+```
+
+# rebuild app
+```
+# rebuild
+$ ./gradlew shadowJar && jdeploy install
 
 # run local app
 $ kotlin-jdeploy-playground
