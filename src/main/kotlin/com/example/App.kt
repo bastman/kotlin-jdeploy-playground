@@ -7,12 +7,12 @@ import com.github.ajalt.clikt.core.CliktCommand
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.options.required
 
-class App:CliktCommand() {
+class App:CliktCommand(help="do sth.") {
     private val from by option("-f", "--from", help = "from").required()
     private val to by option("-t", "--to", help = "to").required()
 
     override fun run() {
-        println("hello from $from to $to")
+        echo("hello from $from to $to")
     }
 }
 
